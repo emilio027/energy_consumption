@@ -6,21 +6,21 @@ This project employs the Prophet forecasting tool to predict future values in a 
 
 ## Business Problem
 
-Time series forecasting plays a pivotal role in guiding business decisions. Predicting future trends and values is essential for resource planning, inventory management, and strategic initiatives. This project aims to provide a reliable forecast for [your specific business metric] over a determined period, enabling better decision-making in the face of uncertainty.
+Time series forecasting plays a pivotal role in guiding business decisions. Predicting future trends and values is essential for resource planning, inventory management, and strategic initiatives. This project aims to provide a reliable forecast for hourly mega-watt consumption, enabling better decision-making in the face of uncertainty.
 
 ## Data
 
-The dataset used encompasses historical data points relevant to [your business metric]. Each record pairs a date with the corresponding metric value on that date, offering a timeline of past performance.
+The dataset used encompasses historical data points relevant to hourly mega-watt consumption. Each record pairs a date with the corresponding metric value on that date, offering a timeline of past performance.
 
 ### Data Preparation
 
-The data preparation phase was critical to ensuring the quality and usability of the dataset for forecasting. Initially, the dataset was cleansed of anomalies and outliers that could skew the results. Missing values were imputed using [describe method, e.g., forward fill, backward fill, interpolation], maintaining the integrity of the time series.
+The data preparation phase was critical to ensuring the quality and usability of the dataset for forecasting. Initially, the dataset was cleansed of anomalies and outliers that could skew the results. Missing values were imputed using backward fill, maintaining the integrity of the time series.
 
-Next, the data was transformed to meet the input requirements of the Prophet model. The date and metric columns were renamed to 'ds' and 'y', respectively, adhering to Prophet's expected schema. The dataset was then aggregated to [describe time interval, e.g., daily, weekly, monthly] intervals to match the forecast granularity we intended to achieve.
+Next, the data was transformed to meet the input requirements of the Prophet model. The date and metric columns were renamed to 'ds' and 'y', respectively, adhering to Prophet's expected schema. The dataset was then aggregated by day of week, hour, and time of year intervals to match the forecast granularity we intended to achieve.
 
 ### Feature Engineering
 
-We introduced additional regressors to the model to account for [mention any external variables like holidays, price changes, economic indicators, etc., if applicable]. These factors were encoded to enable the Prophet model to better understand the influence of external forces on the forecasted metric.
+We introduced additional regressors to the model to account for seasonality and the impact of holidays. These factors were encoded to enable the Prophet model to better understand the influence of external forces on the forecasted metric.
 
 ## Results
 
