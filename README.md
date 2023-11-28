@@ -6,11 +6,11 @@ This project employs the Prophet forecasting tool to predict future values in a 
 
 ## Business Problem
 
-Time series forecasting plays a pivotal role in guiding business decisions. Predicting future trends and values is essential for resource planning, inventory management, and strategic initiatives. This project aims to provide a reliable forecast for hourly mega-watt consumption, enabling better decision-making in the face of uncertainty.
+Time series forecasting plays a pivotal role in guiding business decisions. Predicting future trends and values is essential for resource planning, inventory management, and strategic initiatives. This project aims to provide a reliable forecast for hourly mega-watt (MWh) consumption, enabling better decision-making in the face of uncertainty.
 
 ## Data
 
-The dataset used encompasses historical data points relevant to hourly mega-watt consumption. Each record pairs a date with the corresponding metric value on that date, offering a timeline of past performance.
+The dataset used encompasses historical data points relevant to MWh consumption. Each record pairs a date with the corresponding metric value on that date, offering a timeline of past performance.
 
 ### Data Preparation
 
@@ -29,7 +29,7 @@ We introduced additional regressors to the model to account for seasonality and 
 
 The Prophet model was trained on the prepared dataset, and the results were thoroughly analyzed. The forecasts generated showed promising alignment with the known data, capturing the seasonal trends and patterns with a high degree of accuracy. The prediction for the next time period indicated a trend of steady demand for the upcoming years.
 
-The performance of the model was quantified using the Mean Absolute Error (MAE) and the Root Mean Squared Error (RMSE), with the values being 5,185 MW and 6,622 MW, respectively. The Mean Absolute Percentage Error (MAPE) was of 16.5%.
+The performance of the model was quantified using the Mean Absolute Error (MAE) and the Root Mean Squared Error (RMSE), with the values being 5,185 MWh and 6,622 MWh, respectively. The Mean Absolute Percentage Error (MAPE) was of 16.5%.
 
 ![Alt Text](/images/forecast.png)
 
@@ -37,7 +37,7 @@ Visualizations in the notebook offer a clear view of the forecast with its confi
 
 ### Interpretation of Results
 
-The provided forecasts, coupled with the trend analyses, serve as a foundation for making informed business decisions. The model's ability to forecast [mention any specific seasonality, trends, etc.] suggests that it can be a valuable tool in [mention business area, e.g., inventory planning, financial forecasting].
+The provided forecasts, coupled with the trend analyses, serve as a foundation for making informed business decisions. The model's ability to forecast MWh suggests that it can be a valuable tool in the Energy Sector. 
 
 ## Recommendations and Business Impact
 
@@ -45,9 +45,9 @@ Based on the model's forecasts, we recommend the following actions:
 
 - **Adjust Inventory Levels:** Align inventory with the predicted demand to optimize stock levels and reduce holding costs.
 - **Resource Allocation:** Schedule the workforce and other resources to meet the anticipated business activity, enhancing efficiency and customer satisfaction.
-- **Budget Planning:** Adjust financial plans to prepare for the expected changes in [mention the business metric, e.g., revenue, costs, user acquisition].
+- **Budget Planning:** Adjust financial plans to prepare for the expected changes in energy consumption.
 
-The implementation of these recommendations could lead to a more data-driven approach in business operations, potentially resulting in [mention the expected outcomes, e.g., increased revenue, cost savings, market growth].
+The implementation of these recommendations could lead to a more data-driven approach in business operations, potentially resulting in increased revenue, lower production cost, and market growth.
 
 By anticipating future trends, the business can proactively strategize, staying ahead of the curve and maintaining a competitive edge in the marketplace.
 
