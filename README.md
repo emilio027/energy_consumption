@@ -21,6 +21,7 @@ The data preparation phase was critical to ensuring the quality and usability of
 Next, the data was transformed to meet the input requirements of the Prophet model. The date and metric columns were renamed to 'ds' and 'y', respectively, adhering to Prophet's expected schema. The dataset was then aggregated by day of week, hour, and time of year intervals to match the forecast granularity we intended to achieve.
 
 ### Feature Engineering
+![Alt Text](/images/holidays.png)
 
 We introduced additional regressors to the model to account for seasonality and the impact of holidays. These factors were encoded to enable the Prophet model to better understand the influence of external forces on the forecasted metric.
 
