@@ -15,7 +15,9 @@ The dataset used encompasses historical data points relevant to hourly mega-watt
 ### Data Preparation
 
 The data preparation phase was critical to ensuring the quality and usability of the dataset for forecasting. Initially, the dataset was cleansed of anomalies and outliers that could skew the results. Missing values were imputed using backward fill, maintaining the integrity of the time series.
+
 ![Alt Text](/images/output.png)
+
 Next, the data was transformed to meet the input requirements of the Prophet model. The date and metric columns were renamed to 'ds' and 'y', respectively, adhering to Prophet's expected schema. The dataset was then aggregated by day of week, hour, and time of year intervals to match the forecast granularity we intended to achieve.
 
 ### Feature Engineering
