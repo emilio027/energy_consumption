@@ -1,5 +1,5 @@
 # Energy Consumption Forecasting
-![Alt Text](/images/output.png)
+![Alt Text](/images/kwh.webp)
 ## Summary
 
 This project employs the Prophet forecasting tool to predict future values in a time series dataset. Prophet is adept at handling various patterns in time series data with its robust, decomposable model components. Here, we demonstrate its application in forecasting with a real-world dataset.
