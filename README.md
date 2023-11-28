@@ -27,9 +27,9 @@ We introduced additional regressors to the model to account for seasonality and 
 
 ## Results
 
-The Prophet model was trained on the prepared dataset, and the results were thoroughly analyzed. The forecasts generated showed promising alignment with the known data, capturing the seasonal trends and patterns with a high degree of accuracy. The prediction for the next time period indicated reflected a trend of steady demand for the upcoming years.
+The Prophet model was trained on the prepared dataset, and the results were thoroughly analyzed. The forecasts generated showed promising alignment with the known data, capturing the seasonal trends and patterns with a high degree of accuracy. The prediction for the next time period indicated a trend of steady demand for the upcoming years.
 
-The performance of the model was quantified using the Mean Absolute Error (MAE) and the Root Mean Squared Error (RMSE), with the values being 5,185 MW and 6,622 MW , respectively. The Mea Absolute Percentage Error (MAPE) was of 16.5%.
+The performance of the model was quantified using the Mean Absolute Error (MAE) and the Root Mean Squared Error (RMSE), with the values being 5,185 MW and 6,622 MW, respectively. The Mean Absolute Percentage Error (MAPE) was of 16.5%.
 
 ![Alt Text](/image/forecast.png)
 
