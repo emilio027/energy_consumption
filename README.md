@@ -31,7 +31,7 @@ The Prophet model was trained on the prepared dataset, and the results were thor
 
 The performance of the model was quantified using the Mean Absolute Error (MAE) and the Root Mean Squared Error (RMSE), with the values being 5,185 MW and 6,622 MW, respectively. The Mean Absolute Percentage Error (MAPE) was of 16.5%.
 
-![Alt Text](/image/forecast.png)
+![Alt Text](/images/forecast.png)
 
 Visualizations in the notebook offer a clear view of the forecast with its confidence intervals, highlighting the model's ability to anticipate future movements in the time series data.
 
